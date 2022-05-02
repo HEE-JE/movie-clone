@@ -10,6 +10,7 @@ import {
 import LandingPage from './views/LandingPage/LandingPage';
 import LoginPage from './views/LoginPage/LoginPage';
 import RegisterPage from './views/RegisterPage/RegisterPage';
+import MovieDetailPage from './views/MovieDetail/MovieDetailPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/login" element={<LoginPage />} />
           <Route exact path="/register" element={<RegisterPage />} />
+          <Route exact path="/movie/:movieId" element={<MovieDetailPage />} />
         </Routes>
       </div>
     </Router>

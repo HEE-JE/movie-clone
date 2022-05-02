@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Auth from '../../../hoc/auth';
 import { API_URL, API_KEY, IMAGE_BASE_URL } from '../../config';
-import MainImage from './Sections/MainImage';
+import MainImage from '../commons/MainImage';
 import GridCards from '../commons/GridCards';
 import { Row } from 'antd';
 
@@ -95,4 +95,4 @@ function LandingPage() {
 
 }
 
-export default LandingPage
+export default Auth(LandingPage, false)
