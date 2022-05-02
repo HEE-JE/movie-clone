@@ -10,6 +10,7 @@ function MainImage(props) {
             100%)`,
             backgroundColor: '#1c1c1c',
             backgroundImage: `url('${props.image}')`,
+            height: '500px',
             backgroundSize: '100%, cover',
             backgroundPosition: 'center, center',
             width: '100%',
